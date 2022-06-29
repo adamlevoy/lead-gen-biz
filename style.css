@@ -82,12 +82,12 @@ select {
 
 /* ---- END RESET ---- */
 
+h1 {
+	color: white;
+	text-transform: uppercase;
+}
+
 header {
-	background-image: url('./assets/woman-coaching-team.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100vh;
 	padding-block: 2rem;
 }
 
@@ -97,4 +97,23 @@ nav {
 	align-items: center;
 	width: 100%;
 	color: white;
+}
+
+.home {
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	background-image: linear-gradient(
+			hsla(0, 0%, 0%, 0.5),
+			hsla(0, 0%, 0%, 0.5)
+		),
+		url('./assets/woman-coaching-team.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding-inline: 10vw;
 }
