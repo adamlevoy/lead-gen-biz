@@ -139,7 +139,7 @@ footer {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 95vh;
+	height: 90vh;
 }
 
 span.logo {
@@ -185,7 +185,13 @@ span.logo {
 	flex-grow: 1;
 } */
 
-@media (min-width: 35em) {
+@media (min-width: 30em) {
+	.cta-container {
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 40em) {
 	.hero-container {
 		grid-template-columns: 8rem repeat(2, 1fr) 8rem;
 	}
@@ -210,7 +216,6 @@ span.logo {
 	align-items: center;
 	background-color: var(--white);
 	color: var(--black);
-	margin-top: -300px;
 	padding-block: 2.5rem;
 }
 
@@ -218,7 +223,7 @@ span.logo {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	gap: 2rem;
+	gap: 3rem;
 	margin-top: 4rem;
 	font-size: 18px;
 	text-align: center;
