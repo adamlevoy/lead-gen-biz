@@ -278,7 +278,7 @@ span.logo {
 	display: grid;
 	row-gap: 2rem;
 	column-gap: 4rem;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	max-width: 1000px;
 	margin-inline: auto;
 }
@@ -288,8 +288,12 @@ span.logo {
 	flex-direction: column;
 }
 
-.faq-container > p {
-	max-width: 300px;
+.faq-container > div > h3 {
+	text-transform: uppercase;
+}
+
+.faq-container > div > p {
+	max-width: 400px;
 	margin-inline: auto;
 }
 
