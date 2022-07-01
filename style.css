@@ -126,8 +126,41 @@ select {
 
 footer {
 	background-color: var(--blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	align-items: center;
 	width: 100%;
 	min-height: 4rem;
+	padding-block: 3rem;
+}
+
+footer > a {
+	color: white;
+	text-decoration: none;
+}
+
+footer > div {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+@media (min-width: 40em) {
+	footer > div {
+		flex-direction: row;
+	}
+
+	footer > div > a {
+		border-left: solid 1px white;
+		padding-left: 1rem;
+	}
+}
+
+footer > div > a {
+	color: white;
+	text-decoration: none;
 }
 
 .page-container {
@@ -245,6 +278,8 @@ span.logo {
 	display: grid;
 	gap: 2rem;
 	margin-top: 3rem;
+	max-width: 1000px;
+	margin-inline: auto;
 }
 
 .faq-container > div {
@@ -253,8 +288,12 @@ span.logo {
 }
 
 .faq-container > div {
-	max-width: 350px;
+	max-width: 320px;
 	margin-inline: auto;
+}
+
+.faq-container > div > p {
+	margin-top: 1rem;
 }
 
 @media (min-width: 40em) {
