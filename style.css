@@ -222,16 +222,51 @@ span.logo {
 }
 
 .how-it-works {
+	background-image: url('./assets/bg-white-large.png');
+	background-size: cover;
+	background-position: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--white);
 	color: var(--black);
 	padding-block: 3rem;
 }
 
+.faq {
+	background-image: url('./assets/bg-blue-large.png');
+	background-size: cover;
+	background-position: center;
+	padding-block: 3rem;
+	text-align: center;
+}
+
+.faq-container {
+	display: grid;
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
+.faq-container > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.faq-container > div {
+	max-width: 350px;
+	margin-inline: auto;
+}
+
+@media (min-width: 40em) {
+	.faq-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
 .form-container {
+	background-image: url('./assets/bg-white-large.png');
+	background-size: cover;
+	background-position: center;
 	text-align: center;
 	font-size: 18px;
 	text-transform: uppercase;
