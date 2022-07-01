@@ -231,6 +231,14 @@ span.logo {
 	padding-block: 3rem;
 }
 
+.form-container {
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-block: 3em;
+	color: var(--black);
+}
+
 .icon-section {
 	display: flex;
 	flex-direction: column;
@@ -282,6 +290,7 @@ span.logo {
 	outline: none;
 	color: white;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-weight: 700;
 	padding-inline: 2rem;
 	padding-block: 1rem;
