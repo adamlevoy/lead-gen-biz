@@ -119,6 +119,11 @@ nav {
 	color: white;
 }
 
+select {
+	border: solid 3px var(--blue);
+	/* font-size: 14px; */
+}
+
 footer {
 	background-color: var(--blue);
 	width: 100%;
@@ -174,7 +179,6 @@ span.logo {
 .cta-container > select {
 	flex-grow: 1;
 	min-height: 2.75rem;
-	border: none;
 	outline: 0;
 	border-radius: 10px;
 	text-transform: uppercase;
@@ -184,6 +188,14 @@ span.logo {
 .cta-container > button {
 	flex-grow: 1;
 } */
+
+.dropdown {
+	outline: var(--blue) solid 2px;
+	min-height: 2.75rem;
+	border-radius: 10px;
+	text-transform: uppercase;
+	padding-inline: 0.5rem;
+}
 
 @media (min-width: 30em) {
 	.cta-container {
@@ -216,14 +228,14 @@ span.logo {
 	align-items: center;
 	background-color: var(--white);
 	color: var(--black);
-	padding-block: 2.5rem;
+	padding-block: 3rem;
 }
 
 .icon-section {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	gap: 3rem;
+	gap: 5rem;
 	margin-top: 4rem;
 	font-size: 18px;
 	text-align: center;
@@ -247,6 +259,10 @@ span.logo {
 .icon-container > p {
 	max-width: 300px;
 	margin-inline: auto;
+}
+
+.icon-container > select {
+	width: 100%;
 }
 
 .number-icon {
