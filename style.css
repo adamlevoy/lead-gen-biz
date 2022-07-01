@@ -276,7 +276,8 @@ span.logo {
 
 .faq-container {
 	display: grid;
-	gap: 2rem;
+	row-gap: 2rem;
+	column-gap: 4rem;
 	margin-top: 3rem;
 	max-width: 1000px;
 	margin-inline: auto;
@@ -287,8 +288,8 @@ span.logo {
 	flex-direction: column;
 }
 
-.faq-container > div {
-	max-width: 320px;
+.faq-container > p {
+	max-width: 300px;
 	margin-inline: auto;
 }
 
