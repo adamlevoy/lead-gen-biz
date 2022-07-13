@@ -9,122 +9,124 @@
 	</head>
 	<body class="home">
 		<header>
-			<nav>
-				<span class="logo">ELITE EXECS</span>
-			</nav>
+			<div class="container">
+				<nav>
+					<div class="logo">
+						<img src="./assets/logo.png" alt="logo" />
+					</div>
+				</nav>
+			</div>
 		</header>
 
-		<main class="page-container hero-container">
-			<div class="hero-content">
-				<div class="hero-text-container">
-					<h1>Premiere <span>Executive Coach</span> Matchmaking</h1>
-					<p>
-						We connect you with vetted, best-in-class Executive
-						coaches tailored to your needs.
-					</p>
+		<main>
+			<section class="hero">
+				<div class="container grid">
+					<div class="hero-content">
+						<div class="hero-text-container">
+							<h1>
+								Free <br /><span>Executive Coach</span>
+								Matchmaking
+							</h1>
+							<p>
+								WE CONNECT YOU WITH ELITE-LEVEL COACHES,
+								PERFECTLY MATCHED TO YOUR NEEDS
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="hero-cta">
+							<p class="fs-600 fw-bold blue">
+								I'm seeking coaching for:
+							</p>
+							<a href="#form" class="btn-primary">Myself</a>
+							<a href="#form" class="btn-primary">My company</a>
+						</div>
+					</div>
 				</div>
-				<div class="cta-container">
-					<select class="dropdown" name="options" id="options">
-						<option value="" disabled selected>
-							I'm looking for...
-						</option>
-						<option value="1">Option 1</option>
-						<option value="1">Option 1</option>
-						<option value="1">Option 1</option>
-					</select>
-					<a href="#form" class="btn-primary">Find Matches</a>
+			</section>
+			<section class="page-container how-it-works">
+				<h2 class="blue fs-h1">How it works</h2>
+				<div class="icon-section">
+					<div class="icon-container">
+						<div class="number-icon">
+							<span class="fs-h1">1</span>
+						</div>
+						<p>Tell us what you're looking for</p>
+						</select>
+						<a href="#form" class="btn-primary">take the quiz</a>
+					</div>
+					<div class="icon-container">
+						<div class="number-icon">
+							<span class="fs-h1">2</span>
+						</div>
+						<p>
+							get matched with
+							<strong>up to 4 coaches</strong> who perfectly fit
+							your needs
+						</p>
+					</div>
+					<div class="icon-container">
+						<div class="number-icon">
+							<span class="fs-h1">3</span>
+						</div>
+						<p>
+							your matches will
+							<strong>reach out to to you</strong> so you can get
+							a feel for is you'd like to work together
+						</p>
+					</div>
 				</div>
-			</div>
+			</section>
+			<section class="page-container faq">
+				<h2 class="fs-h1">FAQs</h2>
+				<div class="faq-container">
+					<div>
+						<h3>Is this free?</h3>
+						<p class="sub-title">
+							Yes, our service is totally free.
+						</p>
+					</div>
+					<div>
+						<h3>Who is this for?</h3>
+						<p>
+							Anvone looking for executive coaching, including
+							individuals, startups, and corporations
+						</p>
+					</div>
+					<div>
+						<h3>Why up to 4 matches?</h3>
+						<p>
+							We've found that matching you with up to 4 coaches
+							results in a nearlv 100% success rate in finding one
+							that perfectly suits your needs.
+						</p>
+					</div>
+					<div>
+						<h3>Am I obligated to work with a match?</h3>
+						<p>
+							No. Our service is no-strings-attached and zero
+							obligation.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="form" class="form-container page-container">
+				<h2 class="fs-h1 blue">find your coach</h2>
+				<p>Chat with our specialist to tailor your matches</p>
+				<div
+					data-tf-widget="aXXXhaqr"
+					data-tf-opacity="20"
+					data-tf-chat
+					data-tf-medium="snippet"
+					style="max-width: 500px; height: 400px; margin-inline: auto"
+				></div>
+				<script src="//embed.typeform.com/next/embed.js"></script>
+			</section>
 		</main>
-		<section class="page-container how-it-works">
-			<h2 class="blue fs-h1">How it works</h2>
-			<div class="icon-section">
-				<div class="icon-container">
-					<div class="number-icon">
-						<span class="fs-h1">1</span>
-					</div>
-					<p>Tell us what you're looking for</p>
-					<select
-						class="dropdown"
-						name="options"
-						id="options"
-						placeholder="testing"
-					>
-						<option value="" disabled selected>
-							I'm looking for...
-						</option>
-						<option value="1">Option 1</option>
-						<option value="1">Option 1</option>
-						<option value="1">Option 1</option>
-					</select>
-					<a href="#form" class="btn-primary">Find Matches</a>
-				</div>
-				<div class="icon-container">
-					<div class="number-icon">
-						<span class="fs-h1">2</span>
-					</div>
-					<p>
-						get matched with <strong>up to 4 coaches</strong> who
-						perfectly fit your needs
-					</p>
-				</div>
-				<div class="icon-container">
-					<div class="number-icon">
-						<span class="fs-h1">3</span>
-					</div>
-					<p>
-						your matches will
-						<strong>reach out to to you</strong> so you can get a
-						feel for is you'd like to work together
-					</p>
-				</div>
-			</div>
-		</section>
-		<section class="page-container faq">
-			<h2 class="fs-h1">FAQs</h2>
-			<div class="faq-container">
-				<div>
-					<h3>Is this free?</h3>
-					<p class="sub-title">Yes, our service is totally free.</p>
-				</div>
-				<div>
-					<h3>Who is this for?</h3>
-					<p>
-						Anvone looking for executive coaching, including
-						individuals, startups, and corporations
-					</p>
-				</div>
-				<div>
-					<h3>Why up to 4 matches?</h3>
-					<p>
-						We've found that matching you with up to 4 coaches
-						results in a nearlv 100% success rate in finding one
-						that perfectly suits your needs.
-					</p>
-				</div>
-				<div>
-					<h3>Am I obligated to work with a match?</h3>
-					<p>
-						No. Our service is no-strings-attached and zero
-						obligation.
-					</p>
-				</div>
-			</div>
-		</section>
-		<section id="form" class="form-container page-container">
-			<h2 class="fs-h1 blue">find your coach</h2>
-			<p>Chat with our specialist to tailor your matches</p>
-			<div
-				data-tf-widget="aXXXhaqr"
-				data-tf-opacity="20"
-				data-tf-chat
-				data-tf-medium="snippet"
-				style="max-width: 500px; height: 400px; margin-inline: auto"
-			></div>
-			<script src="//embed.typeform.com/next/embed.js"></script>
-		</section>
 		<footer>
-			<span class="logo">ELITE EXECS</span>
+			<div class="logo">
+						<img src="./assets/logo.png" alt="logo" />
+					</div>
 			<a href="#">Contact Us</a>
 			<a href="#">Apply as a Coach</a>
 			<div>
