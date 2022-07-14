@@ -111,8 +111,6 @@ h1 > span {
 }
 
 header {
-	padding-block: 1rem;
-	position: absolute;
 	z-index: 10000;
 	width: 100%;
 }
@@ -180,9 +178,8 @@ footer > div > a {
 }
 
 .hero {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: grid;
+	grid-template-rows: max-content 1fr;
 	background-image: linear-gradient(
 			hsla(0, 0%, 0%, 0.5),
 			hsla(0, 0%, 0%, 0.5)
@@ -192,15 +189,27 @@ footer > div > a {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 90vh;
+	padding-block: 1rem;
 }
 
-.hero > .container {
-	gap: 4rem;
-	margin-top: -3rem;
+.hero > section {
+	display: flex;
+	align-items: center;
+}
+
+.hero-container {
+	margin-top: 2rem;
+	column-gap: 4rem;
+	row-gap: 1rem;
 }
 
 .logo {
 	max-width: 10rem;
+}
+
+.hero-container > div {
+	max-width: 450px;
+	margin-inline: auto;
 }
 
 .hero-content {
@@ -228,18 +237,11 @@ footer > div > a {
 	border: 5px solid var(--blue);
 	border-radius: 20px;
 	background-color: hsla(0, 0%, 98%, 0.85);
-}
-
-.dropdown {
-	outline: var(--blue) solid 2px;
-	min-height: 2.75rem;
-	border-radius: 10px;
-	text-transform: uppercase;
-	padding-inline: 0.5rem;
+	text-align: center;
 }
 
 @media (min-width: 60em) {
-	.hero > .container {
+	.hero-container {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
@@ -266,7 +268,7 @@ footer > div > a {
 	align-items: center;
 	color: var(--black);
 	padding-block: 3rem;
-	margin-top: -10rem;
+	/* margin-top: -10rem; */
 }
 
 .reviews {
@@ -309,7 +311,10 @@ footer > div > a {
 }
 
 .faq {
-	background-color: var(--white);
+	background-image: url('./assets/bg-white-large.png');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
 	padding-block: 3rem;
 	text-align: center;
 }
@@ -356,9 +361,6 @@ footer > div > a {
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
-	background-image: url('./assets/bg-white-large.png');
-	background-size: cover;
-	background-position: center;
 	text-align: center;
 	font-size: 18px;
 	text-transform: uppercase;
