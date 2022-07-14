@@ -151,7 +151,7 @@ footer > div {
 	gap: 1rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 60em) {
 	footer > div {
 		flex-direction: row;
 	}
