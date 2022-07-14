@@ -172,6 +172,7 @@ footer > div > a {
 .container {
 	max-width: 1400px;
 	margin-inline: auto;
+	padding-inline: 1rem;
 }
 
 .page-container {
@@ -195,6 +196,7 @@ footer > div > a {
 
 .hero > .container {
 	gap: 4rem;
+	margin-top: -3rem;
 }
 
 .logo {
@@ -236,14 +238,8 @@ footer > div > a {
 	padding-inline: 0.5rem;
 }
 
-@media (min-width: 30em) {
-	.cta-container {
-		flex-direction: column;
-	}
-}
-
-@media (min-width: 40em) {
-	.hero > :first-child {
+@media (min-width: 60em) {
+	.hero > .container {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
@@ -270,6 +266,7 @@ footer > div > a {
 	align-items: center;
 	color: var(--black);
 	padding-block: 3rem;
+	margin-top: -10rem;
 }
 
 .reviews {
@@ -283,14 +280,28 @@ footer > div > a {
 
 .reviews-container {
 	margin-top: 4rem;
+	row-gap: 2rem;
 }
 
 .reviews-container > div {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 1rem;
 	max-width: 450px;
 	margin-inline: auto;
+}
+
+.headshot {
+	max-width: 9rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	outline: 3px solid var(--white);
+	offset: -3px;
+	overflow: hidden;
+}
+
+.headshot > img {
 }
 
 .review-body {
@@ -298,7 +309,7 @@ footer > div > a {
 }
 
 .faq {
-	background-color: var(--blue);
+	background-color: var(--white);
 	padding-block: 3rem;
 	text-align: center;
 }
@@ -341,6 +352,10 @@ footer > div > a {
 }
 
 .form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
 	background-image: url('./assets/bg-white-large.png');
 	background-size: cover;
 	background-position: center;
@@ -361,7 +376,7 @@ footer > div > a {
 	text-align: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 60em) {
 	.icon-section {
 		flex-direction: row;
 	}
@@ -397,6 +412,7 @@ footer > div > a {
 }
 
 .btn-primary {
+	display: inline-block;
 	background-color: var(--blue);
 	border: none;
 	outline: none;
@@ -465,4 +481,8 @@ footer > div > a {
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.bg-white {
+	background-color: var(--white);
 }
