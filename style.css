@@ -2,7 +2,7 @@
 
 :root {
 	/* colors */
-	--blue: #1d94cf;
+	--blue: hsl(196, 100%, 47%);
 	--white: hsl(0, 0%, 98%);
 	--gray: hsl(0, 0%, 41%);
 	--black: hsl(0, 0%, 8%);
@@ -177,6 +177,10 @@ footer > div > a {
 	padding-inline: 1rem;
 }
 
+.primary-navigation {
+	padding-block: 1rem;
+}
+
 .hero {
 	display: grid;
 	grid-template-rows: max-content 1fr;
@@ -238,6 +242,12 @@ footer > div > a {
 	border-radius: 20px;
 	background-color: hsla(0, 0%, 98%, 0.85);
 	text-align: center;
+}
+
+.quiz {
+	display: grid;
+	grid-template-rows: max-content 1fr;
+	background-color: var(--blue);
 }
 
 @media (min-width: 60em) {
@@ -304,15 +314,12 @@ footer > div > a {
 }
 
 .headshot {
-	max-width: 9rem;
+	max-width: 6rem;
 	aspect-ratio: 1;
-	border-radius: 50%;
-	border: 3px solid var(--white);
-
-	overflow: hidden;
 }
 
 .headshot > img {
+	width: 100%;
 }
 
 .review-body {
