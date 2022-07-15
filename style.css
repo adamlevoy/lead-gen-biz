@@ -246,7 +246,7 @@ footer > div > a {
 
 .radio-input-container {
 	display: flex;
-	column-gap: 1rem;
+	column-gap: 0.5rem;
 	justify-content: start;
 	min-width: 12rem;
 	background-color: var(--white);
@@ -261,8 +261,38 @@ footer > div > a {
 	cursor: pointer;
 }
 
-.quiz {
+.quiz,
+.thank-you {
 	background-color: var(--blue);
+}
+
+.quiz {
+	display: grid;
+	place-items: center;
+}
+
+.thank-you {
+	display: grid;
+	grid-template-rows: max-content 1fr;
+	place-items: center;
+	padding-block: 1rem;
+}
+
+.thank-you > section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1rem;
+	background-color: var(--white);
+	max-width: 500px;
+	padding: 2rem;
+	border-radius: 20px;
+	color: var(--black);
+}
+
+.thank-you > section > .btn-primary {
+	margin-top: 1rem;
 }
 
 @media (min-width: 60em) {
@@ -300,9 +330,8 @@ footer > div > a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: var(--black);
 	padding-block: 3rem;
-	/* margin-top: -10rem; */
+	color: var(--black);
 }
 
 .reviews {
@@ -371,6 +400,7 @@ footer > div > a {
 .faq-container > div > p {
 	max-width: 400px;
 	margin-inline: auto;
+	color: var(--black);
 }
 
 .faq-container > div > p {
