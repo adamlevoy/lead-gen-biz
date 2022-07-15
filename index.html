@@ -9,6 +9,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
+		<script src="./index.js" defer></script>
 		<meta property="og:title" content="Elite Execs | Connect with elite-level executive coaches for free" />
 		<meta property="og:description" content="Connect for free with elite-level executive coaches perfectly matched to your needs." />
 		<meta property="og:image" content="./assets/social-image.jpg" />
@@ -45,8 +46,16 @@
 							<p class="fs-600 fw-bold blue">
 								I'm seeking coaching for:
 							</p>
-							<a href="./quiz.html?coachingfor=Myself" class="btn-primary">Myself</a>
-							<a href="./quiz.html?coachingfor=My+company" class="btn-primary">My company</a>
+							<!-- <a href="./quiz.html?coachingfor=Myself" class="btn-primary">Myself</a>
+							<a href="./quiz.html?coachingfor=My+company" class="btn-primary">My company</a> -->
+							<div id="myself" class="radio-input-container">
+								<input type="radio" name="myself">
+								<p>Myself</p>
+							</div>
+							<div id="company" class="radio-input-container">
+								<input type="radio" name="myself">
+								<p>My company</p>
+							</div>
 						</div>
 					</div>
 				</div>
